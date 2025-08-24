@@ -10,21 +10,21 @@ const formSubmitHandler = (evt) => {
   let min = 0;
   let max = 0;
 
-  min += Number(inputs['intimicy-bag-3'].value);
-  max += Number(inputs['intimicy-bag-3'].value) * 4;
-  min += Number(inputs['intimicy-bag-2'].value) * 5;
-  max += Number(inputs['intimicy-bag-2'].value) * 8;
-  min += Number(inputs['intimicy-bag-1'].value) * 4;
-  max += Number(inputs['intimicy-bag-1'].value) * 50;
+  min += Number(inputs['intimacy-bag-3'].value);
+  max += Number(inputs['intimacy-bag-3'].value) * 4;
+  min += Number(inputs['intimacy-bag-2'].value) * 5;
+  max += Number(inputs['intimacy-bag-2'].value) * 8;
+  min += Number(inputs['intimacy-bag-1'].value) * 4;
+  max += Number(inputs['intimacy-bag-1'].value) * 50;
 
-  fix += Number(inputs['intimicy-present-3'].value);
-  fix += Number(inputs['intimicy-present-2'].value) * 2;
-  fix += Number(inputs['intimicy-present-1'].value) * 5;
+  fix += Number(inputs['intimacy-present-3'].value);
+  fix += Number(inputs['intimacy-present-2'].value) * 2;
+  fix += Number(inputs['intimacy-present-1'].value) * 5;
 
-  fix += Number(inputs['intimicy-coin-4'].value);
-  fix += Number(inputs['intimicy-coin-3'].value) * 2;
-  fix += Number(inputs['intimicy-coin-2'].value) * 5;
-  fix += Number(inputs['intimicy-coin-1'].value) * 25;
+  fix += Number(inputs['intimacy-coin-4'].value);
+  fix += Number(inputs['intimacy-coin-3'].value) * 2;
+  fix += Number(inputs['intimacy-coin-2'].value) * 5;
+  fix += Number(inputs['intimacy-coin-1'].value) * 25;
 
   displayResult(min + fix, max + fix);
   evt.target.reset();
