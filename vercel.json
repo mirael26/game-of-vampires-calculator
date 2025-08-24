@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "src": "/intimicy",
+      "dest": "/intimicy.html"
+    },
+    {
+      "src": "/attraction",
+      "dest": "/attraction.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
