@@ -1,0 +1,89 @@
+html {
+  background: #26272b;
+}
+
+body {
+  z-index: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Minion Pro', 'Times New Roman', serif;
+  color: #ffe3a9;
+  background: #26272b url('img/pomeste-baskervilei-anime-5.webp') center / cover;
+}
+
+body::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(38, 39, 43, 0.8);
+}
+
+.button {
+  padding: 5px 10px;
+  font-family: 'Minion Pro', 'Times New Roman', serif;
+  font-size: 14px;
+  color: #ffe3a9;
+  background: linear-gradient(#2a2023, #902a28);
+  border: 1px solid #ffe3a9;
+  border-radius: 5px;
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.form__result {
+  margin: 0 0 10px 0;
+}
+
+.form__btn-submit {
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.item__input {
+  width: 100px;
+  height: 26px;
+  padding: 0 4px;
+  border: 1px solid #ffe3a9;
+  border-radius: 5px;
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('./fonts/MinionPro-Medium.woff2'),
+    url('./fonts/MinionPro-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('./fonts/MinionPro-Regular.woff2'),
+    url('./fonts/MinionPro-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+}
