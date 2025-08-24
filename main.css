@@ -79,6 +79,7 @@ body {
 
 .form__result {
   margin: 0 0 10px 0;
+  text-align: center;
 }
 
 .form__btn-submit {
@@ -99,8 +100,15 @@ body {
 .item__input {
   width: 110px;
   height: 36px;
-  padding: 0 4px;
+  padding: 0 6px;
   font-size: 16px;
   border: 1px solid #ffe3a9;
   border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
