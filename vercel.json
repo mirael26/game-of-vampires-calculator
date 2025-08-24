@@ -16,6 +16,18 @@
   ],
   "routes": [
     {
+      "src": "/(.*\\.css)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
+      "src": "/js/(.*)",
+      "dest": "/js/$1"
+    },
+    {
       "src": "/intimacy",
       "dest": "/intimacy.html"
     },
