@@ -1,8 +1,10 @@
-const form = document.querySelector('form');
-const RangeResult = document.querySelector('#range-result');
-const AverageResult = document.querySelector('#average-result');
+const intimacyForm = document.querySelector('#intimacy-form');
+const intimacyRangeResult = document.querySelector('#intimacy-range-result');
+const intimacyAverageResult = document.querySelector(
+  '#intimacy-average-result'
+);
 
-const formSubmitHandler = (evt) => {
+const intimacyFormSubmitHandler = (evt) => {
   evt.preventDefault();
   const inputs = evt.target.elements;
 
@@ -26,15 +28,15 @@ const formSubmitHandler = (evt) => {
   fix += Number(inputs['intimacy-coin-2'].value) * 5;
   fix += Number(inputs['intimacy-coin-1'].value) * 25;
 
-  displayResult(min + fix, max + fix);
+  displayIntimacyResult(min + fix, max + fix);
   evt.target.reset();
 };
 
-const displayResult = (min, max) => {
-  if (RangeResult && AverageResult) {
-    RangeResult.textContent = `Диапазон близости: ${min} - ${max}`;
-    AverageResult.textContent = `Среднее значение: ${(min + max) / 2}`;
+const displayIntimacyResult = (min, max) => {
+  if (intimacyRangeResult && intimacyAverageResult) {
+    intimacyRangeResult.textContent = `Диапазон близости: ${min} - ${max}`;
+    intimacyAverageResult.textContent = `Среднее значение: ${(min + max) / 2}`;
   }
 };
 
-form.onsubmit = formSubmitHandler;
+intimacyForm.onsubmit = intimacyFormSubmitHandler;

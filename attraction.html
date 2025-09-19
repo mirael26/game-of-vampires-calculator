@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор Влечения</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/fonts.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="/intimacy" class="menu__link">Калькулятор близости</a>
+          </li>
+          <li class="menu__item">
+            <a href="/attraction" class="menu__link">Калькулятор влечения</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title">Калькулятор влечения</h1>
+      <form class="form" id="attraction-form">
+        <ul class="form__list">
+          <li class="item">
+            <img
+              src="/img/icons/attraction-bottle-1.png"
+              width="50"
+              height="50"
+              alt="Шкатулка влечения"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-bottle-1"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="/img/icons/attraction-bottle-2.png"
+              width="50"
+              height="50"
+              alt="Бутыль влечения"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-bottle-2"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="/img/icons/attraction-bottle-3.png"
+              width="50"
+              height="50"
+              alt="Пиала влечения"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-bottle-3"
+            />
+          </li>
+
+          <li class="item">
+            <img
+              src="/img/icons/attraction-bouquet-1.png"
+              width="50"
+              height="50"
+              alt="Лиловый букет"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-bouquet-1"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="/img/icons/attraction-bouquet-2.png"
+              width="50"
+              height="50"
+              alt="Синий букет"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-bouquet-2"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="/img/icons/attraction-bouquet-3.png"
+              width="50"
+              height="50"
+              alt="Алый букет"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-bouquet-3"
+            />
+          </li>
+
+          <li class="item">
+            <img
+              src="/img/icons/attraction-book-1.png"
+              width="50"
+              height="50"
+              alt="Потальная записка"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-book-1"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="/img/icons/attraction-book-2.png"
+              width="50"
+              height="50"
+              alt="Багровая записка"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-book-2"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="/img/icons/attraction-book-3.png"
+              width="50"
+              height="50"
+              alt="Индиговая записка"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-book-3"
+            />
+          </li>
+          <li class="item">
+            <img
+              src="/img/icons/attraction-book-4.png"
+              width="50"
+              height="50"
+              alt="Бирюзовая записка"
+              class="item__image"
+            />
+            <input
+              class="item__input"
+              type="number"
+              pattern="[0-9]*"
+              autocomplete="off"
+              id="attraction-book-4"
+            />
+          </li>
+        </ul>
+        <button class="form__btn-submit button" type="submit">Посчитать</button>
+        <p class="form__result" id="attraction-range-result"></p>
+        <p class="form__result" id="attraction-average-result"></p>
+      </form>
+    </main>
+  </body>
+
+  <script src="/js/calculate-attraction.js"></script>
+</html>
